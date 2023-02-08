@@ -5,8 +5,8 @@ export const plantList = [
 		id: '1ed',
 		isBestSale: true,
 		estSolde :true,
-		water: 'un peu',
-		light: 1
+		water: 1,
+		light: 4
 	},
 	{
 		name: 'ficus lyrata',
@@ -14,7 +14,7 @@ export const plantList = [
 		id: '2ab',
 		isBestSale: true,
 		estSolde :false,
-		water: 'beaucoup',
+		water: 5,
 		light: 1
 	},
 	{
@@ -23,7 +23,7 @@ export const plantList = [
 		id: '3sd',
 		isBestSale: false,
 		estSolde :false,
-		water: 'passionnment',
+		water: 6,
 		light: 3
 	},
 	{
@@ -32,7 +32,7 @@ export const plantList = [
 		id: '4kk',
 		isBestSale: false,
 		estSolde :true,
-		water: 'à la folie',
+		water: 7,
 		light: 2
 
 	},
@@ -42,8 +42,8 @@ export const plantList = [
 		id: '5pl',
 		isBestSale: true,
 		estSolde : false,
-		water: 'beaucoup',
-		light: 1
+		water: 2,
+		light: 5
 	},
 	{
 		name: 'géranium',
@@ -51,7 +51,7 @@ export const plantList = [
 		id: '6uo',
 		isBestSale: false,
 		estSolde : false,
-		water: 'un peu',
+		water: 1,
 		light: 1
 
 	},
@@ -61,8 +61,8 @@ export const plantList = [
 		id: '7ie',
 		isBestSale: true,
 		estSolde :true,
-		water: 'à la folie',
-		light: 2
+		water: 7,
+		light: 5
 	},
 	{
 		name: 'aloe',
@@ -70,7 +70,7 @@ export const plantList = [
 		id: '8fp',
 		isBestSale: false,
 		estSolde : false,
-		water: 'beaucoup',
+		water: 2,
 		light: 1
 	},
 	{
@@ -79,7 +79,7 @@ export const plantList = [
 		id: '9vn',
 		isBestSale: false,
 		estSolde : false,
-		water: 'à la folie',
-		light: 2
+		water: 7,
+		light: 4
 	}
 ]

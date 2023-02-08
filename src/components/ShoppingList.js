@@ -2,7 +2,7 @@ import { plantList } from '../datas/plantList';
 import '../styles/ShoppingList.css';
 import CareScale from './CareScale';
 import Plantitem from './Plantitem';
-
+import monstera from  '../assets/monstera.jpg';
 
 
 const listCat = new Set();
@@ -44,16 +44,31 @@ export default function ShoppingList() {
         );
           Catégories:{lesCat}
            Nos Plantes: {listOfPlants}
-       */
-       const unePlante = plantList[0]; 
-            
-    return (
-        <div>
-            <CareScale scaleValue={unePlante.light}/>
+            <div> 
         <ul>
-        {listOfPlants[1]}
+        {listOfPlants}
         </ul>
         </div>
+              
+              console.log(unePlante.light);
+            
+       */
+       const unePlante = plantList[5]; 
+       const listeProps = Object.keys(unePlante);
+       console.log(listeProps)
+       const soleil = unePlante.light;
+       const eau = unePlante.water;
+
+       
+    
+            
+    return (
+        <>
+       <Plantitem name={unePlante.name} cover={monstera}/>
+       <CareScale scaleValue={String(soleil)} careType='light'/>
+       <CareScale scaleValue={String(eau)} careType='water'/>
+        </>
+      
     )
         
        
