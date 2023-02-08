@@ -2,7 +2,6 @@ import Cart from "./Cart";
 import '../styles/Banner.css';
 import logo from '../assets/logo.png';
 import ShoppingList from './ShoppingList';
-import { plantList } from '../datas/plantList';
 import Recommandation from './Recommandation';
 
 
@@ -21,12 +20,16 @@ export default function Banner() {
          <div>
          <Recommandation/>
          </div>
-      </div>
-        
-      <Cart/>
+      </div>   
       
-      <ShoppingList plantList={plantList}/>
+      <div>
+      <ShoppingList/>
+      </div>
+  
+     
+      
         </>  
 
     )
 }
+ /* <Cart/> */
