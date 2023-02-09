@@ -3,7 +3,14 @@ import '../styles/ShoppingList.css';
 import CareScale from './CareScale';
 import Plantitem from './Plantitem';
 import monstera from  '../assets/monstera.jpg';
-
+import aloe from '../assets/aloe.png';
+import basilic from '../assets/basilic.png';
+import ficus_lyrata from '../assets/ficus_lyrata.png';
+import geranium from '../assets/geranium.png';
+import olivier from '../assets/olivier.png';
+import pothos_argente from '../assets/pothos_argenté.png';
+import succulente from '../assets/succulente.png';
+import yucca from '../assets/yucca.png';
 
 const listCat = new Set();
  plantList.forEach(extractCategory);
@@ -42,8 +49,7 @@ export default function ShoppingList() {
     const lesCat = listOfCat.map(
         (cat,index) =>  <li key={`${cat}-${index} `}> {cat} </li>
         );
-          Catégories:{lesCat}
-           Nos Plantes: {listOfPlants}
+          
             <div> 
         <ul>
         {listOfPlants}
@@ -51,22 +57,39 @@ export default function ShoppingList() {
         </div>
               
               console.log(unePlante.light);
+              Nos Plantes: {listOfPlants}
             
        */
-       const unePlante = plantList[5]; 
+     const listOfCat = Array.from(listCat);
+     const lesCat = listOfCat.map(
+    (cat,index) =>  <span key={`${cat}-${index} `}>-- {cat} </span>
+                  );
+       const unePlante = plantList[1]; 
        const listeProps = Object.keys(unePlante);
        console.log(listeProps)
        const soleil = unePlante.light;
        const eau = unePlante.water;
+       const image = unePlante.cover
 
        
     
             
     return (
         <>
-       <Plantitem name={unePlante.name} cover={monstera}/>
+        <div>
+          <div>
+          Catégories:{lesCat}
+          </div>
+           
+           
+           
+           
+        </div>
+       <Plantitem name={unePlante.name} cover={ficus_lyrata}>
        <CareScale scaleValue={String(soleil)} careType='light'/>
        <CareScale scaleValue={String(eau)} careType='water'/>
+        </Plantitem>
+       
         </>
       
     )

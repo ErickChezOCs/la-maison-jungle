@@ -1,3 +1,5 @@
+
+
 export const plantList = [
 	{
 		name: 'monstera',
@@ -6,7 +8,8 @@ export const plantList = [
 		isBestSale: true,
 		estSolde :true,
 		water: 1,
-		light: 4
+		light: 4,
+		
 	},
 	{
 		name: 'ficus lyrata',
