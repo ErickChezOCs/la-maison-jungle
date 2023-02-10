@@ -3,12 +3,12 @@ import CareScale from './CareScale';
 
 
 export default function Plantitem(props) {
-    const {name,cover}= props;
+    const {id,name,cover,light,water}= props;
     
 
 
     /*utilisation de name et cover
-    <CareScale scaleValue={String(soleil)} careType='' />
+    
     */
     return (
         <>
@@ -16,9 +16,9 @@ export default function Plantitem(props) {
             <img className="lmj-plant-item-cover"  src={cover} />
             <p className="lmj-plant-item">{name}</p>
            </div>
-           <div>
-             
-           </div>
+           <CareScale scaleValue={light} careType='light'/>
+           <CareScale scaleValue={water} careType='water'/>
+           
         </>
     )
 

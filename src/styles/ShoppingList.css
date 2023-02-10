@@ -1,8 +1,9 @@
 .lmj-sales {
-    width: 50px;
-    height: 10px;
-    font-weight: 500;
-    color: white;
-    padding: 5px 10px;
-    background-color: #31b572;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lmj-nobullet {
+list-style-type: none;
+padding: 3%;
+
 }
