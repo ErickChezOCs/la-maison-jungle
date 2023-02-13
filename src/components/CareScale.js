@@ -1,4 +1,4 @@
-/*une echelle dynamique qui affiche 1,2 ou 3 symboles identiques en fonction
+/*une echelle dynamique qui affiche 1,2 ou plus symboles identiques en fonction
 de deux paramètres un nombre et une chaine
 si le nombre est égal à un, map bouclera trois fois mais n'affichera qu'un
 symbole
