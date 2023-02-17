@@ -5,15 +5,10 @@ import CareScale from './CareScale';
 export default function Plantitem(props) {
     const {id,name,cover,light,water}= props;
     
-
-
-    /*utilisation de name et cover
-    
-    */
     return (
         <>
             <div>
-            <img className="lmj-plant-item-cover"  src={cover} />
+            <img className="lmj-plant-item-cover"   alt='Une très belle plante' src={cover} />
             <p className="lmj-plant-item">{name}</p>
            </div>
            <CareScale scaleValue={light} careType='light'/>
@@ -24,3 +19,7 @@ export default function Plantitem(props) {
 
            
 }
+export function handleClick(event ) {
+    console.log(`😇 ceci est un event  😇 : }`,event); 
+}
+handleClick()
