@@ -6,7 +6,7 @@ import Plantitem from './Plantitem';
 
 
  
-export default function ShoppingList() {
+export default function ShoppingList({cart, updateCart}) {
  
     
        
@@ -16,6 +16,7 @@ export default function ShoppingList() {
             {plantList.map((plant)=>
             <li key={plant.id} className='lmj-nobullet'> 
                 <Plantitem name={plant.name} cover = {plant.cover} light={plant.light} water={plant.water} />
+            <button onClick={ () => updateCart(cart+1)}>Ajouter au panier</button>
             </li>) 
             }
         </div>}
