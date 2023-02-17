@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/Footer.css'
 
 export default function ControlledQuestionForm(){
     const [inputValue,setInputValue] = useState('');
@@ -7,12 +8,15 @@ export default function ControlledQuestionForm(){
     }
     function checkEmail(){
         if(!inputValue.includes('@')) {
-            alert('ACHTUNG!! il n y a pas "@" ceci est une adresse invalide');
+            alert('ACHTUNG!! il n y a pas de "@", ceci est une adresse invalide.');
         }
     }
     return(
-        <div className="lmj-plant-item">
+        <div className="lmj-footer">
+            <div>
             <span>Saisissez votre email ci-dessous</span>
+           
+            </div>
             <input
             onChange = {handleInput }
             value={inputValue}
